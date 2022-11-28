@@ -25,4 +25,4 @@ else if(grade<39){
     }
 
 }
-determainGrade(300)
+determainGrade()

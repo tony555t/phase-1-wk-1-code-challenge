@@ -26,4 +26,4 @@ function checkSpeed(speed) {
     }
     
     }
-    checkSpeed( 1000)
+    checkSpeed( )
