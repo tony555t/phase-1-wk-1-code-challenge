@@ -7,6 +7,7 @@ function checkSpeed(speed) {
      
     
     
+  
     if (speed < speedLimit + kmPerPoint) //Is current speed less then speed limit?
     
     console.log(`ok`);

@@ -6,29 +6,129 @@ This is one of my many code challenge that mainly forcuses on speed detector ,gr
 ## Documentation
 #### Speed Demerit
 
-
-The program takes an input in terms of speed of a car e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
-
-For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.Write a program that takes as input the speed of a car e.g 80. If the speed is less than 70, it should print “Ok”. Otherwise, for every 5 km/s above the speed limit (70), it should give the driver one demerit point and print the total number of demerit points.
-
-For example, if the speed is 80, it should print: “Points: 2”. If the driver gets more than 12 points, the function should print: “License suspended”.
-
-The program is in javascript with if else function taking the lions share on the whole code.
-    To run the code use node speed.js.
+This is a system used to define the speed limit of a motorist where they are not allowed to dirive to a given speed limit(70).if it passes one i given a demerit and could also be suspendend.
+​
+## User Story
+- A user can enter the marks in the input field.
+- See the grade based on the marks entered.
+​
+​
+## Development Requirements
+​
+- Visual Studio Code.
+- Live server extension.
+​
+## Development Installation
+​
+To get the code..
+​
+1. Cloning the repository:
+​
+Git clone
+https://github.com/tony555t/phase-1-wk-1-code-challenge
+​
+2. Move to the folder and install requirements
+​
+​
+cd week-1-code
+​
+4. Running the application
+​
+​
+Open index file and with live server
+​
+Open the application on your browser `127.0.0.1:5500`.
+​
+​
+### Running the program
+​
+Running the application is  straight forward. You can use the following steps to run the app.
+​
+- Install required dependencies from npm i.e. npm install.
+- Run the application on the browser or terminal using "node index.js" to execute code.
+​
+​
+## Technology used
+​
+​
+​
+#### Author and License
+​
+This project was contributed to by:
+ANTONY TULA
+​
+"author": "ANTONY TULA",
+  "license": "ISC",
 
 #### Student grade generator
-The program is all about generating Student grades.
- Write that prompts the user to input student marks. The input should be between 0 and 100. Then output the correct grade: 
-
-A > 79, B - 60 to 79, C -  59 to 49, D - 40 to 49, E - less 40.   
-
+# Weekend COde Challenge ( STUDENT GRADE GENERATOR)
+​
+## Description
+​
+This a code that prompts a user to input student marks between 0 and 100 and then ouputs the correct grade:
+A > 79,
+B - 60 to 79,
+C -  59 to 49,
+D - 40 to 49,
+E - less 40.
+​
+And if an input isn't in the range of the range between 0 and 100, it gives out an error message.
+​
+## User Story
+- A user can enter the marks in the input field.
+- See the grade based on the marks entered.
+​
+​
+## Development Requirements
+​
+- Visual Studio Code.
+- Live server extension.
+​
+## Development Installation
+​
+To get the code..
+​
+1. Cloning the repository:
+​
+Git clone
+https://github.com/tony555t/phase-1-wk-1-code-challenge
+​
+2. Move to the folder and install requirements
+​
+​
+cd week-1-code
+​
+4. Running the application
+​
+​
+Open index file and with live server
+​
+Open the application on your browser `127.0.0.1:5500`.
+​
+​
+### Running the program
+​
+Running the application is straight forward. You can use the following steps to run the app.
+​
+- Install required dependencies from npm i.e. npm install.
+- Run the application on the browser or terminal using "node index.js" to execute code.
+​
+​
+## Technology used
+​
+​
+​
+#### Author and License
+​
+This project was contributed to by:
+ANTONY TULA
+​
+"author": "ANTONY TULA",
+  "license": "ISC",
+ 
 ### salary calculator
-Write a program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
-NB: Use KRA, NHIF, and NSSF values provided in the link below.
+This is  program whose major task is to calculate an individual’s Net Salary by getting the inputs of basic salary and benefits. Calculate the payee (i.e. Tax), NHIFDeductions, NSSFDeductions, gross salary, and net salary. 
 
-https://www.aren.co.ke/payroll/taxrates.htm Links to an external site.  
-
-https://www.kra.go.ke/en/individual/calculate-tax/calculating-tax/paye
 ## Running Tests
 To run the code  parse any value  in the arguments.
 
