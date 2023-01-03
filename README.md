@@ -49,7 +49,8 @@ Running the application is  straight forward. You can use the following steps to
 ​
 ​
 ## Technology used
-​
+​vs code
+live server extension
 ​
 ​
 #### Author and License
@@ -115,6 +116,7 @@ Running the application is straight forward. You can use the following steps to 
 ​
 ​
 ## Technology used
+vs code
 ​
 ​
 ​
