@@ -1,0 +1,276 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>Grade Generator</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+      .body{
+
+        height: 100vh;
+        align-items: center;
+        dicsplay: flex;
+        bakground-color: pink;
+        background-image: url("../image/karoli.jpg");
+       justify-content: center;
+       font-family: arial, sans-serif;
+       font-size: 15px;
+      } 
+      .container{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 50px;
+        border-radius: 10px;
+        background-color: aquamarine;
+        min-width: 500px;
+        background-image: url("../image/eye.jpg");
+
+      }
+      
+      h1{
+        margin-bottom: 5px;
+       font-size: 40px;
+        text-align: center;
+        
+      }
+
+      .block{
+        margin: 0 auto 12px;
+       display: flex
+      
+
+      }
+      
+      
+      input{
+        padding: 10px;
+        width: 65%;
+        font-size: 15px;
+        border-radius: 0 5px 5px 0;
+        outline: none;
+      }
+      .btnBlock{
+        display: flex;
+        width: 100%;
+      }
+      .btn {
+        width: 100px;
+        height: 30px;
+        margin: 20px;
+        border: none;
+        border-radius: 100px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+      button:hover {
+  background-color: pink;
+}
+     
+     
+      
+      .btnReset{
+      
+  background-color: rgb(213, 214, 223); green;
+  color: white;
+  width: 200px;
+  height: 30px;
+  font-size: 19px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  display: center;
+  text-align: center;
+  
+}
+       
+      .gradebtn{
+        background-color: rgb(67, 223, 35);
+        width: 150px;
+        display:flex;
+         }
+      .finalgrade{
+        display: table-cell;
+        vertical-align: middle;
+        margin-top: 20px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 0px;
+        font-size: 80px;
+        text-align: center;
+        background-color: rgb(213, 214, 223);
+        width: 200px;
+        height: 200px
+        
+      }
+      
+.main{
+  display: table-cell;
+  vertical-align: middle;
+}
+
+    </style>
+  </head>
+  <body>
+<main class ="container">
+  <h1>GRADE GENERATOR</h1>
+  <form action="" id ="frmCalc">
+    <div class="block">
+      <input type="number"id ="marks" class="form-control" placeholder="Enter marks here" min="0" max="100" required>
+     
+    </div> 
+    <div class="btnBlock">
+      <button type="button" class="btn" onclick="results()">CALCULATE</button>
+      <a href="" class="btn btnReset">RESET</a>
+    </div>
+  </form>
+</main>
+<div class="finalgrade">
+  <table>
+    <tr>
+      <td id ="grade"></td>
+    </tr>
+  </table>
+</div>
+<p class= "grade">GRADE</p>
+<div class="conatainer2">
+<input type="button" onclick=window.location.href="Home.html" class="gradebtn" value="Home"/>
+</div>
+    <script src="Grade.js"></script>
+   
+  </body>
+</html>
+<!-- <!DOCTYPE html></style>
+</head>
+<body>
+<main class ="container">
+<h1>STUDENT GRADE GENERATOR</h1>
+<form action="" id ="frmCalc">
+  <div class="block">
+    <input type="number"id ="marks" class="form-control" placeholder="Enter here" min="0" max="100" required>
+    <label for="marks">ENTER MARKS HERE </label>
+  </div> 
+  <div class="btnBlock">
+    <button type="button" class="btn" onclick="results()">CALCULATE</button>
+    <a href="" class="btn btnReset">RESET</a>
+  </div>
+</form>
+</main>
+<div class="acquired">
+<table>
+  <tr>
+    <td id ="grade"></td>
+  </tr>
+</table>
+</div>
+<p class= "grade">GRADE</p>
+<div class="conatainer2">
+<input type="button" onclick=window.location.href="https://silly-lily-48cfdd.netlify.app/" class="gradebtn" value="Home Page"/>
+</div>
+  <script src="app.js"></script>
+ 
+</body>
+<html>
+  <head>
+    <style>
+      /* Add styles for the UI here */
+      .container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+      }
+
+      .input-container {
+        display: flex;
+        align-items: center;
+      }
+
+      .marks-input {
+        width: 50px;
+        height: 25px;
+        margin: 0 10px;
+      }
+
+      .button {
+        width: 80px;
+        height: 30px;
+        margin: 10px;
+        border: none;
+        border-radius: 5px;
+        font-size: 16px;
+        cursor: pointer;
+      }
+
+      .calculate-button {
+        background-color: blue;
+        color: white;
+      }
+
+      .reset-button {
+        background-color: grey;
+        color: white;
+      }
+
+      .grade-display {
+        margin: 10px 0;
+        font-size: 20px;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+<main class ="container">
+  <h1>STUDENT GRADE GENERATOR</h1>
+  <form action="" id ="frmCalc">
+    <div class="block">
+      <input type="number"id ="marks" class="form-control" placeholder="Enter here" min="0" max="100" required>
+      <label for="marks">ENTER MARKS HERE </label>
+    </div> 
+    <div class="btnBlock">
+      <button type="button" class="btn" onclick="results()">CALCULATE</button>
+      <a href="" class="btn btnReset">RESET</a>
+    </div>
+  </form>
+</main>
+<div class="acquired">
+  <table>
+    <tr>
+      <td id ="grade"></td>
+    </tr>
+  </table>
+</div>
+<p class= "grade">GRADE</p>
+<div class="conatainer2">
+<input type="button" onclick=window.location.href="https" class="gradebtn" value="Home Page"/>
+</div>
+    <script src="Grade.js"></script>
+   
+  </body>
+</html> 
+    <!-- </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="input-container">
+        Enter marks:
+        <input type="text" class="marks-input">
+      </div>
+      <div>
+        <button class="button calculate-button">Calculate</button>
+        <button class="button reset-button">Reset</button>
+      </div>
+      <div class="grade-display">
+        Grade:
+      </div>
+      <a href="index.html">Home</a>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html> --> -->

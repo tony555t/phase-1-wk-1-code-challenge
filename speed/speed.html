@@ -1,0 +1,139 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+   
+    <link rel="stylesheet" href="style.css">
+    <title>SPEED DETECTOR</title>
+    <style>
+      *{
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+        text-align: center;
+      }
+      .body{
+        min-: center;
+        display: flex;height: 100px;
+        align-items
+        background-image: url("../image/karoli.jpg");
+       justify-content: center;
+       font-family: Georgia, 'Times New Roman', Times, serif;
+      } 
+      main{
+        padding: 50px;
+        border-radius: 10px;
+        background-image: url("../image/karoli.jpg");
+        min-width: 500px;
+        min-height: 500px;
+      }
+      h1{
+        margin-bottom: 5px;
+       font-size: 40px;
+        text-align: center;
+        font-style: italic;
+        color: bisque;
+       
+        
+      }
+      h2{
+        margin-bottom: 5px;
+       font-size: 28px;
+        text-align: center;
+      }
+      
+      .block1{
+        margin: 0 auto 12px;
+       display: flex
+      }
+      .block2{
+        margin: 0 auto 12px;
+       display: flex
+      }
+     
+      input{
+        padding: 10px;
+        width: 65%;
+        font-size: 15px;
+        border-radius: 5px 5px;
+        outline: none;
+      }
+      .btnBlock{
+        display: flex;
+        width: 100%;
+      }
+      .btn{
+        display:inline-block;
+        padding: 5px;
+        background-color: rgb(34, 228, 235);
+        color: black;
+        outline: none;
+        border: none;
+        cursor: pointer;
+        width: 150px;
+        font-size: 16px;
+        text-decoration: none;
+        text-align: center;
+        transition: all;
+        border-radius: 10px;
+      }
+      .btn:hover{
+        background-color: rgb(246, 252, 250);
+     
+      }
+      .btnReset{
+        background-color: pink;
+       
+      }
+      .speedbtn{
+        background-color: rgb(67, 223, 35);
+        width: 150px;
+        display:flex;
+      }
+      .acquired{
+        padding: 10px;
+        border-radius: 50px;
+        background-color: rgb(224, 225, 235);
+        min-width: 200px;
+        min-height: 150px;
+        text-align: left;
+        font-size: 60px;
+
+      }
+      table{
+        border: 2px;
+      }
+      .hide{
+        display: none;
+
+      }
+
+    </style>
+  </head>
+  <body>
+<main class ="container">
+  <h1>speed detector</h1>
+  <form action="" id ="frmCalc">
+    <div class="block">
+    <input type="number"id ="speed" class="form-control" placeholder="Enter speed in (km/h)">
+    </div>
+<div class="acquired">
+  <table>
+    <tr>
+        <th>Status</th>
+        <td id ="status"></td>
+    </tr>
+  </table>
+</div><br>
+    <div class="col-12 col-md-8 left">
+      <button type="button" class="btn" onclick="speedDetector()">CALCULATE</button>
+      <a href="" class="btn btnReset">RESET</a>
+    </div>
+  
+  </form>
+</main>
+    <script src="speed.js"></script>
+    <input type="button" onclick=window.location.href="https://silly-lily-48cfdd.netlify.app/" class="speedbtn" value="Home Page"/>
+  </body>
+</html>
